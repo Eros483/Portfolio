@@ -3,9 +3,9 @@ import { Skill } from '../types';
 export const skills: Skill[] = [
   // Languages
   { name: 'Python', level: 4, category: 'languages', icon: 'FileCode' },
-  { name: 'C++', level: 4, category: 'languages', icon: 'FileCode' },
+  { name: 'C++', level: 3.5, category: 'languages', icon: 'FileCode' },
   { name: 'C', level: 4, category: 'languages', icon: 'FileCode' },
-  { name: 'SQL', level: 4, category: 'languages', icon: 'Database' },
+  { name: 'SQL', level: 3, category: 'languages', icon: 'Database' },
   
   // ML/Data Science
   { name: 'NumPy', level: 4, category: 'ml', icon: 'FunctionSquare' },
@@ -16,6 +16,9 @@ export const skills: Skill[] = [
   { name: 'PyTorch', level: 4, category: 'ml', icon: 'Flame' },
   { name: 'Stable Baselines3', level: 3, category: 'ml', icon: 'Activity' },
   { name: 'Transformers (Hugging Face)', level: 3, category: 'ml', icon: 'Bot' },
+  { name: 'XGBoost', level: 3, category: 'ml', icon: 'TrendingUp' },
+  { name: 'SHAP', level: 2.5, category: 'ml', icon: 'PieChart' },
+  { name: 'Optuna', level: 2.5, category: 'ml', icon: 'Settings' },
 
   // Backend
   { name: 'FastAPI', level: 4, category: 'backend', icon: 'Server' },
@@ -25,6 +28,7 @@ export const skills: Skill[] = [
 
   // Frontend
   { name: 'Streamlit', level: 4.5, category: 'frontend', icon: 'LayoutDashboard' },
+  { name: 'PySide6', level: 3, category: 'frontend', icon: 'Frontend' },
 
   // Tools
   { name: 'Git', level: 4, category: 'tools', icon: 'GitBranch' },

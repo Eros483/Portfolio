@@ -1,8 +1,32 @@
 import { Project } from '../types';
 
 export const projects: Project[] = [
-    {
+  {
+    id: "7",
+    title: "Telco Churn Analysis and Prediction",
+    description: "A complete analytics and ML pipeline that helps a business: predict churn, understand why, and take action to reduce it.",
+    longDescription: "This is a Streamlit-based web application for analyzing customer churn data. The app loads pre-trained models and displays predictions and data insights interactively. The goal was to use machine learning to predict which customers are likely to cancel their subscription, and identify the key reasons behind churn.",
+    technologies: ["pandas", "matplotlib", "seaborn", "scikit-learn", "numpy", "shap", "XGBoost", "Optuna", "streamlit"],
+    imageUrl: "https://i.imghippo.com/files/WLc3759hcI.png",
+    githubUrl: "https://github.com/Eros483/Telco-Churn-Analysis",
+    liveUrl: "https://telco-churn-analysis-qkqq9n3i8s8ifr5qfurj2w.streamlit.app",
+    date: "2025-05",
+    featured: true
+  },
+  {
     id: "6",
+    title: "RAG Toolkit",
+    description: "GenAI agent, capable of running completly local and offline with low resource demands",
+    longDescription: "This Project provides a windows application with Agentic RAG, Chatbot, Evaluation and Summarizational capabilities.",
+    technologies: ["llama-cpp-python", "sentence-transformers", "faiss-cpu", "scikit-learn", "numpy", "Pyside6", "pyinstaller"],
+    imageUrl: "https://i.imghippo.com/files/bhe8547FD.png",
+    githubUrl: "https://github.com/Eros483/RAG-runner",
+    liveUrl: "https://github.com/Eros483/RAG-runner/releases/tag/v4.0.0",
+    date: "2025-05",
+    featured: true
+  },
+  {
+    id: "5",
     title: "What beats rock?",
     description: "Recreated the traditional what beats rock game, where the user enters objects to defeat a seed object.",
     longDescription: "Used Gemini 2.0 flash with a full stack deployment to detect if the user objects defeats the seed object and generate responses with a variety of personas.",
@@ -11,18 +35,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Eros483/what-beats-rock",
     liveUrl: "https://what-beats-rock-its0.onrender.com",
     date: "2025-05",
-    featured: true
-  },
-  {
-    id: "5",
-    title: "Local RAG with LLaMA.cpp",
-    description: "Retrieval augmented agent, capable of running completly local and offline with low resource demands",
-    longDescription: "This project builds a simple Retrieval-Augmented Generation (RAG) pipeline using a local LLaMA GGUF model (llama-cpp), FAISS for vector search, and a PDF document for contextual grounding.",
-    technologies: ["llama-cpp-python", "sentence-transformers", "faiss-cpu", "scikit-learn", "numpy"],
-    imageUrl: "https://i.imghippo.com/files/AU1796fFE.png",
-    githubUrl: "https://github.com/Eros483/customisable-Rag-agent",
-    liveUrl: "",
-    date: "2025-04",
     featured: true
   },
   {
