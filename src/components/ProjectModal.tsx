@@ -45,17 +45,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
       <div 
         ref={modalRef}
-        className="bg-white dark:bg-gray-900 rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+        className="bg-white/95 dark:bg-dark-900/95 backdrop-blur-md rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-gray-200/50 dark:border-dark-700/50"
       >
         {/* Header with close button */}
-        <div className="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{project.title}</h2>
+        <div className="flex justify-between items-center p-6 border-b border-gray-200/50 dark:border-dark-700/50">
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
+            {project.title}
+          </h2>
           <button 
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
+            className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-800 rounded-lg transition-colors"
             aria-label="Close"
           >
             <X size={24} />
@@ -66,7 +68,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         <div className="p-6">
           {/* Project Image */}
           {project.imageUrl && (
-            <div className="mb-6 rounded-lg overflow-hidden">
+            <div className="mb-6 rounded-xl overflow-hidden border border-gray-200/50 dark:border-dark-700/50">
               <img 
                 src={project.imageUrl} 
                 alt={project.title} 
@@ -84,7 +86,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {/* Description */}
           <div className="mb-6">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Description</h3>
-            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">
+            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line leading-relaxed">
               {project.longDescription || project.description}
             </p>
           </div>
@@ -96,7 +98,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               {project.technologies.map((tech, index) => (
                 <span 
                   key={index}
-                  className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full"
+                  className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm rounded-full border border-primary-200 dark:border-primary-800"
                 >
                   {tech}
                 </span>
@@ -105,13 +107,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           </div>
           
           {/* Links */}
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap gap-4">
             {project.githubUrl && (
               <a 
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="flex items-center px-6 py-3 bg-gray-100 dark:bg-dark-800 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors border border-gray-200 dark:border-dark-700"
               >
                 <Github size={18} className="mr-2" />
                 GitHub Repository
@@ -122,7 +124,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors"
+                className="flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-accent-500 text-white rounded-lg hover:from-primary-700 hover:to-accent-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <ExternalLink size={18} className="mr-2" />
                 Live Demo
