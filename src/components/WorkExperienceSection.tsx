@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Briefcase, Award, Code } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { workExperience } from '../data/workExperience';
 
 const WorkExperienceSection: React.FC = () => {
@@ -62,89 +62,47 @@ const WorkExperienceSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Timeline */}
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-600 via-accent-500 to-primary-600 rounded-full"></div>
+            <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-600 via-accent-500 to-primary-600 rounded-full"></div>
             
             {/* Experience items */}
-            <div className="space-y-12">
+            <div className="space-y-8">
               {workExperience.map((experience, index) => (
                 <div key={experience.id} className="relative">
                   {/* Timeline dot */}
-                  <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary-600 to-accent-500 rounded-full border-4 border-white dark:border-dark-900 shadow-lg z-10"></div>
+                  <div className="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary-600 to-accent-500 rounded-full border-2 border-white dark:border-dark-900 shadow-lg z-10"></div>
                   
                   {/* Content */}
-                  <div className={`ml-20 md:ml-0 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-8'}`}>
-                    <div className="group bg-white/70 dark:bg-dark-800/70 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-gray-200/50 dark:border-dark-700/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 hover:transform hover:-translate-y-1 hover:border-primary-500/30">
-                      {/* Header */}
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                        <div className="mb-2 sm:mb-0">
-                          <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                            {experience.position}
-                          </h3>
-                          <p className="text-lg text-primary-600 dark:text-primary-400 font-medium">
-                            {experience.company}
-                          </p>
-                        </div>
-                        
-                        <div className="flex flex-col sm:items-end space-y-2">
-                          <span className={`px-3 py-1 text-xs rounded-full border ${getTypeColor(experience.type)} capitalize`}>
-                            {experience.type}
-                          </span>
-                          <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm">
-                            <Calendar size={14} className="mr-1" />
-                            <span>{formatDate(experience.startDate)} - {formatDate(experience.endDate)}</span>
-                          </div>
-                          <div className="text-xs text-gray-400 dark:text-gray-500">
-                            {calculateDuration(experience.startDate, experience.endDate)}
-                          </div>
-                        </div>
+                  <div className={`ml-16 md:ml-0 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-8'}`}>
+                    <div className="group bg-white/70 dark:bg-dark-800/70 backdrop-blur-sm rounded-lg p-4 shadow-sm border border-gray-200/50 dark:border-dark-700/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 hover:transform hover:-translate-y-1 hover:border-primary-500/30">
+                      {/* Position and Company */}
+                      <div className="mb-3">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                          {experience.position}
+                        </h3>
+                        <p className="text-primary-600 dark:text-primary-400 font-medium">
+                          {experience.company}
+                        </p>
                       </div>
 
-                      {/* Description */}
-                      <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                        {experience.description}
-                      </p>
-
-                      {/* Achievements */}
-                      {experience.achievements && experience.achievements.length > 0 && (
-                        <div className="mb-4">
-                          <h4 className="flex items-center text-sm font-medium text-gray-800 dark:text-gray-200 mb-2">
-                            <Award size={16} className="mr-2 text-accent-500" />
-                            Key Achievements
-                          </h4>
-                          <ul className="space-y-1">
-                            {experience.achievements.map((achievement, idx) => (
-                              <li key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
-                                <span className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                                {achievement}
-                              </li>
-                            ))}
-                          </ul>
+                      {/* Time and Type */}
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-2 sm:mb-0">
+                          <Calendar size={14} className="mr-2" />
+                          <span>{formatDate(experience.startDate)} - {formatDate(experience.endDate)}</span>
+                          <span className="mx-2">•</span>
+                          <span className="text-xs text-gray-400 dark:text-gray-500">
+                            {calculateDuration(experience.startDate, experience.endDate)}
+                          </span>
                         </div>
-                      )}
-
-                      {/* Technologies */}
-                      {experience.technologies && experience.technologies.length > 0 && (
-                        <div>
-                          <h4 className="flex items-center text-sm font-medium text-gray-800 dark:text-gray-200 mb-2">
-                            <Code size={16} className="mr-2 text-primary-500" />
-                            Technologies Used
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {experience.technologies.map((tech, idx) => (
-                              <span 
-                                key={idx}
-                                className="px-2 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded-md border border-primary-200 dark:border-primary-800"
-                              >
-                                {tech}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
+                        
+                        <span className={`px-2 py-1 text-xs rounded-full border ${getTypeColor(experience.type)} capitalize self-start sm:self-auto`}>
+                          {experience.type}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
