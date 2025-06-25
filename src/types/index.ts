@@ -18,4 +18,17 @@ export interface Skill {
   icon?: string; // Lucide icon name
 }
 
+export interface WorkExperience {
+  id: string;
+  position: string;
+  company: string;
+  location?: string;
+  startDate: string; // Format: "YYYY-MM"
+  endDate: string; // Format: "YYYY-MM" or "Present"
+  description: string;
+  achievements?: string[];
+  technologies?: string[];
+  type: 'internship' | 'full-time' | 'part-time' | 'contract';
+}
+
 export type ThemeMode = 'light' | 'dark';

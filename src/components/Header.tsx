@@ -58,6 +58,12 @@ const Header: React.FC = () => {
             Skills
           </button>
           <button 
+            onClick={() => scrollToSection('experience')}
+            className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+          >
+            Experience
+          </button>
+          <button 
             onClick={() => scrollToSection('projects')}
             className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
           >
@@ -100,6 +106,12 @@ const Header: React.FC = () => {
               className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
             >
               Skills
+            </button>
+            <button 
+              onClick={() => scrollToSection('experience')}
+              className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
+            >
+              Experience
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
