@@ -2,7 +2,67 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "11",
+    title: "RAG-Toolkit",
+    description: "A server based Chatbot that aims to create a Audio and Image based interactive Narrative, created for Critical AI Pvt Ltd.",
+    longDescription: "A modular, GPU-accelerated Retrieval-Augmented Generation system built for Critical AI. This toolkit integrates a FastAPI backend and a Streamlit frontend, with support for llama-cpp-python LLMs and custom embeddings.",
+    technologies: ["gTTs", "faiss", "PEFT", "folium", "PyMongo"],
+    imageUrl: "https://i.imghippo.com/files/bIu4772AL.png",
+    githubUrl: "https://github.com/Eros483/Finetuning-for-DataScience",
+    liveUrl: "",
+    date: "2025-06",
+    featured: true
+  },
+  {
+    id: "10",
+    title: "Finetuning for DataScience",
+    description: "Fine-Tuning Meta's Llama 3.2 for Python and Data Science.",
+    longDescription: "Finetunes Meta's Llama 2-7b sequentially over python code and basic use case data science code.",
+    technologies: ["Unsloth", "pandas", "PEFT", "HuggingFace", "transformers"],
+    imageUrl: "https://i.imghippo.com/files/MDio6727NYs.png",
+    githubUrl: "https://github.com/Eros483/Finetuning-for-DataScience",
+    liveUrl: "",
+    date: "2025-06",
+    featured: true
+  },
+  {
+    id: "9",
+    title: "Military Report Generation ChatBot",
+    description: "Report Generation and Analysis Chatbot for WESEE, MoD.",
+    longDescription: "Allows users to communicate with databases in natural language, to get detailed reports and analysis as per their requests.",
+    technologies: ["Langchain", "SQLAlchemy", "LangGraph", "Ollama", "mcp-use"],
+    imageUrl: "https://i.imghippo.com/files/DQPo6113NE.png",
+    githubUrl: "https://github.com/Eros483/Maritime-Report-Generation",
+    liveUrl: "",
+    date: "2025-06",
+    featured: true
+  },
+  {
+    id: "8",
+    title: "Drone Identification and Tracking",
+    description: "Drone Identification and Tracking pipeline for WESEE, MoD.",
+    longDescription: "Detects and tracks drones, UCAVs and other flying objects in the provided video and image files.",
+    technologies: ["Pandas", "Numpy", "Ultralytics", "Selenium", "Streamlit"],
+    imageUrl: "https://i.imghippo.com/files/dznh2475ZIs.png",
+    githubUrl: "https://github.com/Eros483/Drone_Identification_and_Tracking",
+    liveUrl: "",
+    date: "2025-06",
+    featured: true
+  },
+  {
     id: "7",
+    title: "Multi-Lingual Audio-Based Sentiment Detection",
+    description: "Takes audio input in 5 supported languages, and returns sentiment and emotions encaptured.",
+    longDescription: "Applies multi-modal fusion with analysis of both the way the user is speaking, and what the user is speaking.",
+    technologies: ["openai-whisper", "transformers", "torch", "scikit-learn", "numpy", "pandas", "matplotlib", "nlpaug", "fastapi"],
+    imageUrl: "https://i.imghippo.com/files/uwuq4190Ivw.png",
+    githubUrl: "https://github.com/Eros483/Cross-lingual-nlp-auditory",
+    liveUrl: "",
+    date: "2025-05",
+    featured: true
+  },
+  {
+    id: "6",
     title: "Telco Churn Analysis and Prediction",
     description: "A complete analytics and ML pipeline that helps a business: predict churn, understand why, and take action to reduce it.",
     longDescription: "This is a Streamlit-based web application for analyzing customer churn data. The app loads pre-trained models and displays predictions and data insights interactively. The goal was to use machine learning to predict which customers are likely to cancel their subscription, and identify the key reasons behind churn.",
@@ -10,18 +70,6 @@ export const projects: Project[] = [
     imageUrl: "https://i.imghippo.com/files/WLc3759hcI.png",
     githubUrl: "https://github.com/Eros483/Telco-Churn-Analysis",
     liveUrl: "https://telco-churn-analysis-qkqq9n3i8s8ifr5qfurj2w.streamlit.app",
-    date: "2025-05",
-    featured: true
-  },
-  {
-    id: "6",
-    title: "RAG Toolkit",
-    description: "GenAI agent, capable of running completly local and offline with low resource demands",
-    longDescription: "This Project provides a windows application with Agentic RAG, Chatbot, Evaluation and Summarizational capabilities.",
-    technologies: ["llama-cpp-python", "sentence-transformers", "faiss-cpu", "scikit-learn", "numpy", "Pyside6", "pyinstaller"],
-    imageUrl: "https://i.imghippo.com/files/bhe8547FD.png",
-    githubUrl: "https://github.com/Eros483/RAG-runner",
-    liveUrl: "https://github.com/Eros483/RAG-runner/releases/tag/v4.0.0",
     date: "2025-05",
     featured: true
   },
