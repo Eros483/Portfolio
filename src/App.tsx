@@ -2,9 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
-import SkillsSection from './components/SkillsSection';
-import WorkExperienceSection from './components/WorkExperienceSection';
 import TimelineSection from './components/TimelineSection';
+import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { useTheme } from './hooks/useTheme';
@@ -22,9 +21,8 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
-        <WorkExperienceSection />
         <TimelineSection />
+        <SkillsSection />
         <ContactSection />
       </main>
       <Footer />

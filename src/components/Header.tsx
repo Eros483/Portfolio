@@ -52,22 +52,16 @@ const Header: React.FC = () => {
             About
           </button>
           <button 
-            onClick={() => scrollToSection('skills')}
-            className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
-          >
-            Skills
-          </button>
-          <button 
-            onClick={() => scrollToSection('experience')}
-            className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
-          >
-            Experience
-          </button>
-          <button 
             onClick={() => scrollToSection('projects')}
             className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
           >
             Projects
+          </button>
+          <button 
+            onClick={() => scrollToSection('skills')}
+            className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+          >
+            Skills
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
@@ -102,22 +96,16 @@ const Header: React.FC = () => {
               About
             </button>
             <button 
-              onClick={() => scrollToSection('skills')}
-              className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
-            >
-              Skills
-            </button>
-            <button 
-              onClick={() => scrollToSection('experience')}
-              className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
-            >
-              Experience
-            </button>
-            <button 
               onClick={() => scrollToSection('projects')}
               className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
             >
               Projects
+            </button>
+            <button 
+              onClick={() => scrollToSection('skills')}
+              className="text-xl text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 text-left"
+            >
+              Skills
             </button>
             <button 
               onClick={() => scrollToSection('contact')}

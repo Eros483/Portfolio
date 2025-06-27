@@ -33,22 +33,16 @@ const Footer: React.FC = () => {
               About
             </button>
             <button 
-              onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-400 hover:text-primary-400 transition-colors hover:underline"
-            >
-              Skills
-            </button>
-            <button 
-              onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-400 hover:text-primary-400 transition-colors hover:underline"
-            >
-              Experience
-            </button>
-            <button 
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-gray-400 hover:text-primary-400 transition-colors hover:underline"
             >
               Projects
+            </button>
+            <button 
+              onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-gray-400 hover:text-primary-400 transition-colors hover:underline"
+            >
+              Skills
             </button>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
