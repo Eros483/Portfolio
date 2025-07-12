@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Github as GitHub, Linkedin, Mail, ChevronDown } from 'lucide-react';
-
+import profileImg from '../assets/arnab-profile.jpg';
 const HeroSection: React.FC = () => {
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
 
@@ -50,9 +50,11 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 py-16 md:py-32 flex flex-col justify-center items-center text-center relative z-10">
         <div className="mb-8 opacity-0 animate-fadeIn" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
           <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-r from-primary-500 to-whimsy-500 rounded-full p-1 animate-float">
-            <div className="w-full h-full bg-white dark:bg-dark-900 rounded-full flex items-center justify-center border-2 border-white/20">
-              <span className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-whimsy-600 bg-clip-text text-transparent animate-wiggle">A</span>
-            </div>
+            <img
+              src={profileImg}
+              alt="Arnab"
+              className="w-full h-full rounded-full object-cover border-2 border-white/20 bg-white dark:bg-dark-900"
+            />
           </div>
         </div>
 
@@ -62,12 +64,11 @@ const HeroSection: React.FC = () => {
         </h1>
         
         <h2 className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200 mb-8 opacity-0 animate-fadeIn" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-          Computer Science Student & <span className="text-primary-500 dark:text-whimsy-400 animate-pulse-slow">AI/ML Developer</span>
+          Computer Science Student & <span className="text-primary-500 dark:text-whimsy-400 animate-pulse-slow">Machine Learning Engineer</span>
         </h2>
         
         <p className="max-w-2xl text-gray-600 dark:text-gray-300 mb-10 opacity-0 animate-fadeIn leading-relaxed" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
-          I aim to build clean applications that are user friendly, and are built with the latest technologies, 
-          to be directed to solving problems, efficiently and quickly.
+          I create projects with real life applications, learning, debugging and deploying with the objective of creating a complete product.
         </p>
         
         <div className="flex space-x-4 mb-12 opacity-0 animate-fadeIn" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
@@ -98,6 +99,28 @@ const HeroSection: React.FC = () => {
           >
             <Mail size={20} className="group-hover:text-white transition-colors group-hover:animate-wiggle" />
           </a>
+          <a 
+          href="https://drive.google.com/file/d/1D7p9DnSVpA7eKxNhxEb3WK37TNaUf0_R/view?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="group p-4 bg-white/20 dark:bg-white/10 backdrop-blur-sm border-2 border-white/30 text-gray-800 dark:text-white rounded-full hover:bg-accent-500 hover:border-accent-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent-500/30 animate-float"
+          aria-label="Open Arnab Mandal's Resume"
+          title="View Resume"
+          style={{ animationDelay: '0.7s' }}
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 group-hover:text-white transition-colors group-hover:animate-wiggle"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1M12 12v6m0 0l3-3m-3 3l-3-3M16 4H8a2 2 0 00-2 2v4h12V6a2 2 0 00-2-2z" />
+          </svg>
+          </a>
+
+          
         </div>
         
         {showScrollIndicator && (
