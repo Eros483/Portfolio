@@ -24,22 +24,24 @@ function App() {
         <div className="absolute bottom-40 left-1/4 w-40 h-40 bg-accent-500/8 rounded-full blur-3xl animate-squiggle"></div>
         <div className="absolute bottom-20 right-10 w-28 h-28 bg-primary-400/12 rounded-full blur-2xl animate-wiggle"></div>
         
-        {/* Squiggly lines */}
-        <svg className="absolute top-1/6 left-0 w-full h-20 opacity-20" viewBox="0 0 1200 100">
-          <path d="M0,50 Q300,10 600,50 T1200,50" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
-        </svg>
-        <svg className="absolute top-1/3 right-0 w-full h-20 opacity-15" viewBox="0 0 1200 100">
-          <path d="M0,50 Q300,90 600,50 T1200,50" stroke="white" strokeWidth="3" fill="none" className="animate-float"/>
-        </svg>
-        <svg className="absolute top-1/2 left-0 w-full h-20 opacity-10" viewBox="0 0 1200 100">
-          <path d="M0,50 Q200,20 400,50 Q600,80 800,50 Q1000,20 1200,50" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
-        </svg>
-        <svg className="absolute top-2/3 right-0 w-full h-20 opacity-12" viewBox="0 0 1200 100">
-          <path d="M0,50 Q150,10 300,50 Q450,90 600,50 Q750,10 900,50 Q1050,90 1200,50" stroke="white" strokeWidth="1.5" fill="none" className="animate-float"/>
-        </svg>
-        <svg className="absolute bottom-1/4 left-0 w-full h-20 opacity-18" viewBox="0 0 1200 100">
-          <path d="M0,50 Q100,30 200,50 Q300,70 400,50 Q500,30 600,50 Q700,70 800,50 Q900,30 1000,50 Q1100,70 1200,50" stroke="white" strokeWidth="2.5" fill="none" className="animate-squiggle"/>
-        </svg>
+        {/* Cute small shapes */}
+        <div className="absolute top-16 left-16 w-3 h-3 bg-whimsy-400/40 rounded-full animate-float"></div>
+        <div className="absolute top-32 right-32 w-2 h-2 bg-primary-400/50 animate-wiggle" style={{clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)'}}></div>
+        <div className="absolute top-48 left-1/4 w-4 h-4 bg-accent-400/35 rotate-45 animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-whimsy-500/45 animate-pulse-slow" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        <div className="absolute top-80 left-1/3 w-2 h-4 bg-primary-300/40 rounded-full animate-wiggle"></div>
+        
+        <div className="absolute top-1/4 right-20 w-3 h-3 bg-whimsy-400/40 animate-float" style={{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)'}}></div>
+        <div className="absolute top-1/3 left-20 w-4 h-2 bg-accent-400/45 rounded-full animate-squiggle"></div>
+        <div className="absolute top-2/5 right-1/4 w-3 h-3 bg-primary-400/50 rounded-full animate-wiggle"></div>
+        <div className="absolute top-1/2 left-1/5 w-2 h-2 bg-whimsy-500/40 rotate-45 animate-float"></div>
+        <div className="absolute top-3/5 right-16 w-3 h-3 bg-accent-300/35 animate-pulse-slow" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        
+        <div className="absolute bottom-1/3 left-1/4 w-4 h-4 bg-primary-400/40 rotate-45 animate-wiggle"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-3 h-3 bg-whimsy-400/45 rounded-full animate-float"></div>
+        <div className="absolute bottom-32 left-16 w-2 h-4 bg-accent-400/35 rounded-full animate-squiggle"></div>
+        <div className="absolute bottom-48 right-20 w-3 h-3 bg-primary-500/40 animate-pulse-slow" style={{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)'}}></div>
+        <div className="absolute bottom-16 left-1/3 w-2 h-2 bg-whimsy-300/50 rotate-45 animate-wiggle"></div>
       </div>
       
       <Header />

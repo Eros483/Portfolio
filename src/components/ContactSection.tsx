@@ -8,19 +8,19 @@ const ContactSection: React.FC = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 right-10 w-64 h-64 bg-whimsy-500/8 rounded-full blur-3xl animate-squiggle"></div>
-        <div className="absolute top-1/4 right-1/4 text-5xl text-primary-200/15 animate-wiggle">📧</div>
-        <div className="absolute bottom-1/4 left-1/4 text-4xl text-whimsy-200/20 animate-float">💬</div>
         
-        {/* Squiggly decorative lines */}
-        <svg className="absolute top-10 left-0 w-full h-20 opacity-12" viewBox="0 0 1200 100">
-          <path d="M0,50 Q300,20 600,50 T1200,50" stroke="currentColor" strokeWidth="3" fill="none" className="text-primary-400 animate-squiggle"/>
-        </svg>
-        <svg className="absolute top-1/3 right-0 w-full h-20 opacity-8" viewBox="0 0 1200 100">
-          <path d="M0,50 Q200,30 400,50 Q600,70 800,50 Q1000,30 1200,50" stroke="currentColor" strokeWidth="2" fill="none" className="text-whimsy-400 animate-float"/>
-        </svg>
-        <svg className="absolute bottom-1/4 left-0 w-full h-20 opacity-15" viewBox="0 0 1200 100">
-          <path d="M0,50 Q150,70 300,50 Q450,30 600,50 Q750,70 900,50 Q1050,30 1200,50" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-primary-300 animate-squiggle"/>
-        </svg>
+        {/* Cute small shapes */}
+        <div className="absolute top-16 left-16 w-3 h-3 bg-primary-200/15 rounded-full animate-wiggle"></div>
+        <div className="absolute top-32 right-32 w-4 h-4 bg-whimsy-300/25 rotate-45 animate-float"></div>
+        <div className="absolute top-48 left-1/4 w-3 h-3 bg-accent-300/30 animate-squiggle" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        
+        <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-primary-200/15 animate-wiggle" style={{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)'}}></div>
+        <div className="absolute top-1/3 left-20 w-2 h-5 bg-whimsy-300/30 rounded-full animate-float"></div>
+        <div className="absolute top-1/2 right-20 w-3 h-3 bg-accent-400/35 rounded-full animate-squiggle"></div>
+        
+        <div className="absolute bottom-1/4 left-1/4 w-4 h-4 bg-whimsy-200/20 rotate-45 animate-float"></div>
+        <div className="absolute bottom-32 right-1/3 w-3 h-3 bg-primary-300/25 animate-pulse-slow" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        <div className="absolute bottom-48 left-20 w-2 h-4 bg-accent-300/30 rounded-full animate-wiggle"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

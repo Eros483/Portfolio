@@ -33,22 +33,18 @@ const HeroSection: React.FC = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-whimsy-500/15 rounded-full blur-3xl animate-wiggle" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-400/10 rounded-full blur-3xl animate-squiggle" style={{ animationDelay: '2s' }}></div>
         
-        {/* Whimsical decorative elements */}
-        <div className="absolute top-20 left-20 text-4xl text-whimsy-400/30 animate-wiggle">✦</div>
-        <div className="absolute top-32 right-32 text-3xl text-accent-400/40 animate-float">♡</div>
-        <div className="absolute bottom-40 left-32 text-2xl text-primary-400/35 animate-squiggle">★</div>
-        <div className="absolute bottom-20 right-20 text-3xl text-whimsy-300/30 animate-pulse-slow">◆</div>
+        {/* Cute small shapes */}
+        <div className="absolute top-20 left-20 w-4 h-4 bg-whimsy-400/30 animate-wiggle" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        <div className="absolute top-32 right-32 w-3 h-3 bg-accent-400/40 rounded-full animate-float"></div>
+        <div className="absolute top-48 left-1/4 w-3 h-3 bg-primary-400/35 rotate-45 animate-squiggle"></div>
+        <div className="absolute top-64 right-1/3 w-4 h-4 bg-whimsy-300/30 animate-pulse-slow" style={{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)'}}></div>
+        <div className="absolute top-80 left-1/3 w-2 h-5 bg-accent-300/40 rounded-full animate-wiggle"></div>
         
-        {/* More squiggly lines */}
-        <svg className="absolute top-10 left-0 w-full h-16 opacity-15" viewBox="0 0 1200 80">
-          <path d="M0,40 Q200,10 400,40 Q600,70 800,40 Q1000,10 1200,40" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
-        </svg>
-        <svg className="absolute top-32 right-0 w-full h-16 opacity-12" viewBox="0 0 1200 80">
-          <path d="M0,40 Q150,60 300,40 Q450,20 600,40 Q750,60 900,40 Q1050,20 1200,40" stroke="white" strokeWidth="1.5" fill="none" className="animate-float"/>
-        </svg>
-        <svg className="absolute bottom-32 left-0 w-full h-16 opacity-18" viewBox="0 0 1200 80">
-          <path d="M0,40 Q100,20 200,40 Q300,60 400,40 Q500,20 600,40 Q700,60 800,40 Q900,20 1000,40 Q1100,60 1200,40" stroke="white" strokeWidth="2.5" fill="none" className="animate-squiggle"/>
-        </svg>
+        <div className="absolute bottom-40 left-32 w-3 h-3 bg-primary-400/35 animate-squiggle" style={{clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}}></div>
+        <div className="absolute bottom-20 right-20 w-4 h-4 bg-whimsy-300/30 rotate-45 animate-pulse-slow"></div>
+        <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-accent-400/40 rounded-full animate-float"></div>
+        <div className="absolute bottom-48 right-1/3 w-2 h-4 bg-primary-300/35 rounded-full animate-wiggle"></div>
+        <div className="absolute bottom-64 left-1/5 w-3 h-3 bg-whimsy-400/40 animate-squiggle" style={{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)'}}></div>
       </div>
 
       <div className="container mx-auto px-4 py-16 md:py-32 flex flex-col justify-center items-center text-center relative z-10">
