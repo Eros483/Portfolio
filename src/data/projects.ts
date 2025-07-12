@@ -2,13 +2,37 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "13",
+    title: "Hybrid Anime Recommendation System",
+    description: "A Hybrid anime recommendation system, combining user based and content based recommendations.",
+    longDescription: "This system serves as a combination of a user-based recommendation system, wherein a user is provided recommendations, based on content consumed by similiar users, and a content-based recommendation system, wherein recommendations are draw from media similiar to anime already viewed by the user.",
+    technologies: ["Pandas", "Numpy", "tensorflow", "dvc", "comet-ml"],
+    imageUrl: "https://i.imghippo.com/files/CaNN3994Tvs.png",
+    githubUrl: "https://github.com/Eros483/Anime-recommendation-system",
+    liveUrl: "",
+    date: "2025-07",
+    featured: true
+  },
+  {
+    id: "12",
+    title: "Hotel Reservation Prediction",
+    description: "Jenkins-GCR ci/cd pipeline to predict hotel booking cancellations.",
+    longDescription: "End to end, CI/CD pipeline with Jenkins for predicting if a hotel booking is going to be cancelled or not. Deployment done using Google Cloud Registry and Google Cloud Run.",
+    technologies: ["Pandas", "Numpy", "lightgbm", "MLFlow", "Flask"],
+    imageUrl: "https://i.imghippo.com/files/Y1393NPs.png",
+    githubUrl: "https://github.com/Eros483/Hotel-Reservation-Prediction",
+    liveUrl: "",
+    date: "2025-07",
+    featured: true
+  },
+  {
     id: "11",
     title: "RAG-Toolkit",
     description: "A server based Chatbot that aims to create a Audio and Image based interactive Narrative, created for Critical AI Pvt Ltd.",
     longDescription: "A modular, GPU-accelerated Retrieval-Augmented Generation system built for Critical AI. This toolkit integrates a FastAPI backend and a Streamlit frontend, with support for llama-cpp-python LLMs and custom embeddings.",
     technologies: ["gTTs", "faiss", "PEFT", "folium", "PyMongo"],
     imageUrl: "https://i.imghippo.com/files/bIu4772AL.png",
-    githubUrl: "https://github.com/Eros483/Finetuning-for-DataScience",
+    githubUrl: "https://github.com/Eros483/RagToolkitServer",
     liveUrl: "",
     date: "2025-06",
     featured: true
