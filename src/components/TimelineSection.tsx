@@ -29,25 +29,38 @@ const TimelineSection: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-dark-950 relative overflow-hidden">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-dark-800 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-40 left-20 w-72 h-72 bg-primary-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 right-20 w-72 h-72 bg-accent-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 left-20 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-40 right-20 w-72 h-72 bg-whimsy-500/8 rounded-full blur-3xl animate-squiggle"></div>
+        <div className="absolute top-20 right-1/4 text-5xl text-primary-200/20 animate-wiggle">★</div>
+        <div className="absolute bottom-20 left-1/4 text-4xl text-whimsy-200/25 animate-float">◆</div>
+        
+        {/* Squiggly decorative lines */}
+        <svg className="absolute top-1/4 left-0 w-full h-20 opacity-10" viewBox="0 0 1200 100">
+          <path d="M0,50 Q300,20 600,50 T1200,50" stroke="currentColor" strokeWidth="2" fill="none" className="text-primary-400 animate-squiggle"/>
+        </svg>
+        <svg className="absolute bottom-1/4 right-0 w-full h-20 opacity-8" viewBox="0 0 1200 100">
+          <path d="M0,50 Q300,80 600,50 T1200,50" stroke="currentColor" strokeWidth="3" fill="none" className="text-whimsy-400 animate-float"/>
+        </svg>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-500 mx-auto mb-8 rounded-full"></div>
-          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 relative">
+            My Projects
+            <span className="absolute -top-2 -right-6 text-2xl text-accent-400/60 animate-wiggle">🚀</span>
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-whimsy-500 mx-auto mb-8 rounded-full animate-pulse-slow"></div>
+          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
             A timeline of my journey through various projects and explorations
           </p>
         </div>
         
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-600 via-accent-500 to-primary-600 hidden md:block rounded-full"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-whimsy-500 to-primary-500 hidden md:block rounded-full animate-pulse-slow"></div>
           
           {/* Projects by year */}
           <div className="space-y-12">
@@ -56,10 +69,10 @@ const TimelineSection: React.FC = () => {
                 {/* Year marker */}
                 <div className="flex justify-center mb-8">
                   <div className="relative">
-                    <div className="bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-3 rounded-full text-lg font-semibold z-10 relative shadow-lg">
+                    <div className="bg-gradient-to-r from-primary-500 to-whimsy-500 text-white px-8 py-3 rounded-full text-lg font-semibold z-10 relative shadow-lg animate-float border-2 border-white/20">
                       {year}
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-gradient-to-r from-primary-600 to-accent-500 rounded-full hidden md:block shadow-lg"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-gradient-to-r from-primary-500 to-whimsy-500 rounded-full hidden md:block shadow-lg animate-wiggle"></div>
                   </div>
                 </div>
                 
@@ -72,7 +85,7 @@ const TimelineSection: React.FC = () => {
                         <div className="md:w-1/2 hidden md:block"></div>
                         
                         {/* Timeline dot for mobile */}
-                        <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary-600 to-accent-500 rounded-full hidden md:block shadow-lg border-2 border-white dark:border-dark-950"></div>
+                        <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary-500 to-whimsy-500 rounded-full hidden md:block shadow-lg border-2 border-white dark:border-dark-800 animate-pulse-slow"></div>
                         
                         {/* Project card */}
                         <div className="md:w-1/2 px-4">
