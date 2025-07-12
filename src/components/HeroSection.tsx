@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-whimsy-50 to-primary-50 dark:bg-whimsy-gradient pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gray-50 dark:bg-dark-900 pt-16 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-500/20 rounded-full blur-3xl animate-float"></div>
@@ -38,6 +38,17 @@ const HeroSection: React.FC = () => {
         <div className="absolute top-32 right-32 text-3xl text-accent-400/40 animate-float">♡</div>
         <div className="absolute bottom-40 left-32 text-2xl text-primary-400/35 animate-squiggle">★</div>
         <div className="absolute bottom-20 right-20 text-3xl text-whimsy-300/30 animate-pulse-slow">◆</div>
+        
+        {/* More squiggly lines */}
+        <svg className="absolute top-10 left-0 w-full h-16 opacity-15" viewBox="0 0 1200 80">
+          <path d="M0,40 Q200,10 400,40 Q600,70 800,40 Q1000,10 1200,40" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
+        </svg>
+        <svg className="absolute top-32 right-0 w-full h-16 opacity-12" viewBox="0 0 1200 80">
+          <path d="M0,40 Q150,60 300,40 Q450,20 600,40 Q750,60 900,40 Q1050,20 1200,40" stroke="white" strokeWidth="1.5" fill="none" className="animate-float"/>
+        </svg>
+        <svg className="absolute bottom-32 left-0 w-full h-16 opacity-18" viewBox="0 0 1200 80">
+          <path d="M0,40 Q100,20 200,40 Q300,60 400,40 Q500,20 600,40 Q700,60 800,40 Q900,20 1000,40 Q1100,60 1200,40" stroke="white" strokeWidth="2.5" fill="none" className="animate-squiggle"/>
+        </svg>
       </div>
 
       <div className="container mx-auto px-4 py-16 md:py-32 flex flex-col justify-center items-center text-center relative z-10">

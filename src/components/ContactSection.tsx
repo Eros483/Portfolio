@@ -12,8 +12,14 @@ const ContactSection: React.FC = () => {
         <div className="absolute bottom-1/4 left-1/4 text-4xl text-whimsy-200/20 animate-float">💬</div>
         
         {/* Squiggly decorative lines */}
-        <svg className="absolute top-10 left-0 w-full h-20 opacity-10" viewBox="0 0 1200 100">
+        <svg className="absolute top-10 left-0 w-full h-20 opacity-12" viewBox="0 0 1200 100">
           <path d="M0,50 Q300,20 600,50 T1200,50" stroke="currentColor" strokeWidth="3" fill="none" className="text-primary-400 animate-squiggle"/>
+        </svg>
+        <svg className="absolute top-1/3 right-0 w-full h-20 opacity-8" viewBox="0 0 1200 100">
+          <path d="M0,50 Q200,30 400,50 Q600,70 800,50 Q1000,30 1200,50" stroke="currentColor" strokeWidth="2" fill="none" className="text-whimsy-400 animate-float"/>
+        </svg>
+        <svg className="absolute bottom-1/4 left-0 w-full h-20 opacity-15" viewBox="0 0 1200 100">
+          <path d="M0,50 Q150,70 300,50 Q450,30 600,50 Q750,70 900,50 Q1050,30 1200,50" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-primary-300 animate-squiggle"/>
         </svg>
       </div>
 

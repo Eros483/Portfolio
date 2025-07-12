@@ -16,7 +16,7 @@ function App() {
   useTheme();
 
   return (
-    <div className="font-sans antialiased bg-gray-50 dark:bg-whimsy-gradient text-gray-900 dark:text-white transition-colors duration-300 relative overflow-x-hidden">
+    <div className="font-sans antialiased bg-gray-50 dark:bg-dark-900 text-gray-900 dark:text-white transition-colors duration-300 relative overflow-x-hidden">
       {/* Whimsical background decorations */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary-500/10 rounded-full blur-2xl animate-float"></div>
@@ -25,11 +25,20 @@ function App() {
         <div className="absolute bottom-20 right-10 w-28 h-28 bg-primary-400/12 rounded-full blur-2xl animate-wiggle"></div>
         
         {/* Squiggly lines */}
-        <svg className="absolute top-1/4 left-0 w-full h-20 opacity-20" viewBox="0 0 1200 100">
+        <svg className="absolute top-1/6 left-0 w-full h-20 opacity-20" viewBox="0 0 1200 100">
           <path d="M0,50 Q300,10 600,50 T1200,50" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
         </svg>
-        <svg className="absolute bottom-1/4 right-0 w-full h-20 opacity-15" viewBox="0 0 1200 100">
+        <svg className="absolute top-1/3 right-0 w-full h-20 opacity-15" viewBox="0 0 1200 100">
           <path d="M0,50 Q300,90 600,50 T1200,50" stroke="white" strokeWidth="3" fill="none" className="animate-float"/>
+        </svg>
+        <svg className="absolute top-1/2 left-0 w-full h-20 opacity-10" viewBox="0 0 1200 100">
+          <path d="M0,50 Q200,20 400,50 Q600,80 800,50 Q1000,20 1200,50" stroke="white" strokeWidth="2" fill="none" className="animate-squiggle"/>
+        </svg>
+        <svg className="absolute top-2/3 right-0 w-full h-20 opacity-12" viewBox="0 0 1200 100">
+          <path d="M0,50 Q150,10 300,50 Q450,90 600,50 Q750,10 900,50 Q1050,90 1200,50" stroke="white" strokeWidth="1.5" fill="none" className="animate-float"/>
+        </svg>
+        <svg className="absolute bottom-1/4 left-0 w-full h-20 opacity-18" viewBox="0 0 1200 100">
+          <path d="M0,50 Q100,30 200,50 Q300,70 400,50 Q500,30 600,50 Q700,70 800,50 Q900,30 1000,50 Q1100,70 1200,50" stroke="white" strokeWidth="2.5" fill="none" className="animate-squiggle"/>
         </svg>
       </div>
       

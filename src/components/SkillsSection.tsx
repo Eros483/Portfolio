@@ -38,8 +38,14 @@ const SkillsSection: React.FC = () => {
         <div className="absolute bottom-1/3 right-1/4 text-4xl text-whimsy-200/20 animate-float">🎯</div>
         
         {/* Squiggly decorative lines */}
-        <svg className="absolute top-16 left-0 w-full h-20 opacity-8" viewBox="0 0 1200 100">
+        <svg className="absolute top-16 left-0 w-full h-20 opacity-10" viewBox="0 0 1200 100">
           <path d="M0,50 Q300,20 600,50 T1200,50" stroke="currentColor" strokeWidth="2" fill="none" className="text-primary-300 animate-squiggle"/>
+        </svg>
+        <svg className="absolute top-1/4 right-0 w-full h-20 opacity-8" viewBox="0 0 1200 100">
+          <path d="M0,50 Q200,70 400,50 Q600,30 800,50 Q1000,70 1200,50" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-whimsy-300 animate-float"/>
+        </svg>
+        <svg className="absolute bottom-1/3 left-0 w-full h-20 opacity-12" viewBox="0 0 1200 100">
+          <path d="M0,50 Q150,30 300,50 Q450,70 600,50 Q750,30 900,50 Q1050,70 1200,50" stroke="currentColor" strokeWidth="2" fill="none" className="text-primary-400 animate-squiggle"/>
         </svg>
       </div>
 
