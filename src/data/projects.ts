@@ -2,6 +2,18 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "14",
+    title: "GPT-2 Style LLM from",
+    description: "Built LLM from grass root level using torch and numpy.",
+    longDescription: "Designed complete LLM architecture, including tokenization layers, Multi-Head Attention Mechanism and Positional Encodings.",
+    technologies: ["Pandas", "Numpy", "PyTorch", "tiktoken"],
+    imageUrl: "https://i.imghippo.com/files/rAhN3396OtQ.png",
+    githubUrl: "https://github.com/Eros483/GPT-2_LLM_Architecture",
+    liveUrl: "",
+    date: "2025-07",
+    featured: true
+  },
+  {
     id: "13",
     title: "Hybrid Anime Recommendation System",
     description: "A Hybrid anime recommendation system, combining user based and content based recommendations.",
