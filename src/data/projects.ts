@@ -3,7 +3,7 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: "14",
-    title: "GPT-2 Style LLM from",
+    title: "GPT-2 Style LLM architecture",
     description: "Built LLM from grass root level using torch and numpy.",
     longDescription: "Designed complete LLM architecture, including tokenization layers, Multi-Head Attention Mechanism and Positional Encodings.",
     technologies: ["Pandas", "Numpy", "PyTorch", "tiktoken"],
