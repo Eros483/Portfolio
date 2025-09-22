@@ -100,7 +100,7 @@ const HeroSection: React.FC = () => {
             <Mail size={20} className="group-hover:text-white transition-colors group-hover:animate-wiggle" />
           </a>
           <a 
-          href="https://drive.google.com/file/d/1xDURzia12gLYoQTUxrobCfhWZxc3qoKw/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1-6NQu7yxKLS0zV35cwJNP7ugmd_PmuQR/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="group p-4 bg-white/20 dark:bg-white/10 backdrop-blur-sm border-2 border-white/30 text-gray-800 dark:text-white rounded-full hover:bg-accent-500 hover:border-accent-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent-500/30 animate-float"
