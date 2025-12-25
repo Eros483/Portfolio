@@ -7,7 +7,7 @@ export const experiences: WorkExperience[] = [
     company: "DeepLure AI Research",
     location: "Remote",
     startDate: "2025-12",
-    endDate: "2026-02",
+    endDate: "Present",
     description: "Optimizing vRAM usage for inference model pipelines. Currently, migrating existing systems from a PyTorch backend to TensorRT and Triton Inference Server for improved performance and reduced latency.",
     achievements: [
       "Developed RAG-Toolkit with audio and image-based interactive narratives",

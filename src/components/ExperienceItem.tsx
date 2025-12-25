@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
 import { WorkExperience } from '../types';
 
 interface ExperienceItemProps {
