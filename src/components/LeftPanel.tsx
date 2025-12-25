@@ -68,7 +68,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ activeSection }) => {
         </li>
         <li className="text-xs shrink-0">
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/arnabwithab/"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-slate-400 hover:text-slate-200 transition-colors duration-300"

@@ -4,9 +4,13 @@ import ExperienceItem from './ExperienceItem';
 import ProjectItem from './ProjectItem';
 import { experiences } from '../data/experiences';
 import { projects } from '../data/projects';
+import { Project } from '../types';
 
 const RightPanel: React.FC = () => {
-  const featuredProjects = projects.slice(0, 4);
+  const showcaseIds = ["18", "15", "14", "11"];
+  const featuredProjects = showcaseIds
+      .map((id) => projects.find((project) => project.id === id))
+      .filter((project): project is Project => project !== undefined);
 
   return (
     <div className="pt-24 lg:w-1/2 lg:py-24">
@@ -25,8 +29,8 @@ const RightPanel: React.FC = () => {
           <p>
             My main focus these days is building robust GenAI applications that solve real problems without requiring extensive user training. I'm particularly interested in the intersection of{' '}
             <span className="text-slate-200 font-medium">retrieval-augmented generation</span>,{' '}
-            <span className="text-slate-200 font-medium">computer vision</span>, and{' '}
-            <span className="text-slate-200 font-medium">reinforcement learning</span>.
+            <span className="text-slate-200 font-medium">transformer architecture</span>, and{' '}
+            <span className="text-slate-200 font-medium">and optimizing models at the kernel level</span>.
           </p>
           <p>
             When I'm not coding, you'll find me at the gym, debating politics and international relations, reading about global power dynamics, or exploring new medium articles on tech and philosophy. I also enjoy playing basketball and discovering new music.
@@ -96,7 +100,7 @@ const RightPanel: React.FC = () => {
 
       <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
         <p>
-          Built with{' '}
+          Built with my sweat and tears at having to use typescript, {' '}
           <a
             href="https://react.dev/"
             target="_blank"

@@ -2,7 +2,23 @@ import { WorkExperience } from '../types';
 
 export const experiences: WorkExperience[] = [
   {
-    id: "1",
+    id: "3",
+    position: "AI Engineer Intern",
+    company: "DeepLure AI Research",
+    location: "Remote",
+    startDate: "2025-12",
+    endDate: "2026-02",
+    description: "Optimizing vRAM usage for inference model pipelines. Currently, migrating existing systems from a PyTorch backend to TensorRT and Triton Inference Server for improved performance and reduced latency.",
+    achievements: [
+      "Developed RAG-Toolkit with audio and image-based interactive narratives",
+      "Implemented modular architecture supporting multiple LLM backends",
+      "Optimized GPU acceleration for improved inference performance"
+    ],
+    technologies: ["Python", "PyTorch", "TensorRT", "Docker", "Triton"],
+    type: "internship"
+  },
+  {
+    id: "2",
     position: "AI Engineer Intern",
     company: "Critical AI Pvt Ltd",
     location: "Remote",
@@ -18,7 +34,7 @@ export const experiences: WorkExperience[] = [
     type: "internship"
   },
   {
-    id: "2",
+    id: "1",
     position: "Research Intern",
     company: "WESEE, Ministry of Defence",
     location: "India",
@@ -33,20 +49,4 @@ export const experiences: WorkExperience[] = [
     technologies: ["Python", "Ultralytics", "LangChain", "SQLAlchemy", "Ollama", "Selenium"],
     type: "internship"
   },
-  {
-    id: "3",
-    position: "Machine Learning Intern",
-    company: "Various Projects",
-    location: "Remote",
-    startDate: "2024-09",
-    endDate: "2025-05",
-    description: "Worked on diverse ML projects including sentiment analysis, churn prediction, and recommendation systems. Built end-to-end pipelines with CI/CD integration.",
-    achievements: [
-      "Developed multi-lingual audio sentiment detection system",
-      "Created hotel reservation cancellation prediction with Jenkins CI/CD",
-      "Built hybrid anime recommendation system combining collaborative and content-based filtering"
-    ],
-    technologies: ["Python", "PyTorch", "TensorFlow", "scikit-learn", "Jenkins", "Docker", "MLFlow"],
-    type: "internship"
-  }
 ];

@@ -2,20 +2,68 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "18",
+    title: "Agentic SQL generator",
+    description: "Designed to convert natural queries into stable, efficient SQL queries for healthcare.",
+    longDescription: "Designed as a Natural Language to SQL engine, to query complex healthcare datasets autonomously. Utilises a multi-agentic workflow, powered by AWS Bedrock (Google Gemini as a fallback client) and LangGraph to reason through database schemas and complex query generation.",
+    technologies: ["langchain", "langgraph", "networkx", "AWS Bedrock"],
+    imageUrl: "/images/projects/sql.png",
+    githubUrl: "https://github.com/Eros483/SQL-generation-engine",
+    liveUrl: "",
+    date: "2025-12",
+    featured: true
+  },
+  {
+    id: "17",
+    title: "Hyperbolic embeddings for encoding",
+    description: "Testing Hyperbolic embeddings for LLM encoders for heirarchial datasets.",
+    longDescription: "Investigated performance for encoder models built in the Euclidean space versus built in Hyperbolic space.",
+    technologies: ["Transformers", "geoopt", "seaborn", "nltk"],
+    imageUrl: "/images/projects/hyperbolic.png",
+    githubUrl: "https://github.com/Eros483/Hyperbolic-Embeddings/tree/main",
+    liveUrl: "",
+    date: "2025-11",
+    featured: true
+  },
+  {
+    id: "16",
+    title: "Minimalist Transformer",
+    description: "This project investigates the hypothesis presented by Bermeitinger et al. (2024) in the paper: Reducing the Transformer Architecture to a Minimum.",
+    longDescription: "Removes MLP Blocks, and symetrizes the attention mechanism to create a minimalist transformer architecture, and tests performance on various NLP tasks.",
+    technologies: ["Pandas", "matplotlib", "PyTorch", "tiktoken"],
+    imageUrl: "/images/projects/min.png",
+    githubUrl: "https://github.com/Eros483/Minimalist_Transformer",
+    liveUrl: "",
+    date: "2025-11",
+    featured: true
+  },
+  {
+    id: "15",
+    title: "Krishi AI Sahayak",
+    description: "Android application designed to assist agricultural pursuits.",
+    longDescription: "An app that unifies multiple platforms to serve as a single stop solution to all the needs that a farmer can have, servicable via API or android application.",
+    technologies: ["langchain", "fastapi", "Pandas", "seaborn"],
+    imageUrl: "/images/projects/krishi.png",
+    githubUrl: "https://github.com/Eros483/SIH25-Farmers/tree/main",
+    liveUrl: "https://sih25-farmers.onrender.com/docs",
+    date: "2025-10",
+    featured: true
+  },
+  {
     id: "14",
-    title: "GPT-2 Style LLM architecture",
-    description: "Built LLM from grass root level using torch and numpy.",
-    longDescription: "Designed complete LLM architecture, including tokenization layers, Multi-Head Attention Mechanism and Positional Encodings.",
-    technologies: ["Pandas", "Numpy", "PyTorch", "tiktoken"],
-    imageUrl: "https://i.imghippo.com/files/rAhN3396OtQ.png",
-    githubUrl: "https://github.com/Eros483/GPT-2_LLM_Architecture",
+    title: "Multi-Lingual Audio-Based Sentiment Detection",
+    description: "Takes audio input in 5 supported languages, and returns sentiment and emotions encaptured.",
+    longDescription: "Applies multi-modal fusion with analysis of both the way the user is speaking, and what the user is speaking.",
+    technologies: ["openai-whisper", "transformers", "torch", "scikit-learn", "numpy", "pandas", "matplotlib", "nlpaug", "fastapi"],
+    imageUrl: "https://i.imghippo.com/files/uwuq4190Ivw.png",
+    githubUrl: "https://github.com/Eros483/Cross-lingual-nlp-auditory",
     liveUrl: "",
     date: "2025-07",
     featured: true
   },
   {
     id: "13",
-    title: "Hybrid Anime Recommendation System",
+    title: "Hybrid Recommendation System",
     description: "A Hybrid anime recommendation system, combining user based and content based recommendations.",
     longDescription: "This system serves as a combination of a user-based recommendation system, wherein a user is provided recommendations, based on content consumed by similiar users, and a content-based recommendation system, wherein recommendations are draw from media similiar to anime already viewed by the user.",
     technologies: ["Pandas", "Numpy", "tensorflow", "dvc", "comet-ml"],
@@ -27,12 +75,12 @@ export const projects: Project[] = [
   },
   {
     id: "12",
-    title: "Hotel Reservation Prediction",
-    description: "Jenkins-GCR ci/cd pipeline to predict hotel booking cancellations.",
-    longDescription: "End to end, CI/CD pipeline with Jenkins for predicting if a hotel booking is going to be cancelled or not. Deployment done using Google Cloud Registry and Google Cloud Run.",
-    technologies: ["Pandas", "Numpy", "lightgbm", "MLFlow", "Flask"],
-    imageUrl: "https://i.imghippo.com/files/Y1393NPs.png",
-    githubUrl: "https://github.com/Eros483/Hotel-Reservation-Prediction",
+    title: "GPT-2 Style LLM architecture",
+    description: "Built LLM from grass root level using torch and numpy.",
+    longDescription: "Designed complete LLM architecture, including tokenization layers, Multi-Head Attention Mechanism and Positional Encodings.",
+    technologies: ["Pandas", "Numpy", "PyTorch", "tiktoken"],
+    imageUrl: "https://i.imghippo.com/files/rAhN3396OtQ.png",
+    githubUrl: "https://github.com/Eros483/GPT-2_LLM_Architecture",
     liveUrl: "",
     date: "2025-07",
     featured: true
@@ -51,6 +99,18 @@ export const projects: Project[] = [
   },
   {
     id: "10",
+    title: "Hotel Reservation Prediction",
+    description: "Jenkins-GCR ci/cd pipeline to predict hotel booking cancellations.",
+    longDescription: "End to end, CI/CD pipeline with Jenkins for predicting if a hotel booking is going to be cancelled or not. Deployment done using Google Cloud Registry and Google Cloud Run.",
+    technologies: ["Pandas", "Numpy", "lightgbm", "MLFlow", "Flask"],
+    imageUrl: "https://i.imghippo.com/files/Y1393NPs.png",
+    githubUrl: "https://github.com/Eros483/Hotel-Reservation-Prediction",
+    liveUrl: "",
+    date: "2025-06",
+    featured: true
+  },
+  {
+    id: "9",
     title: "Finetuning for DataScience",
     description: "Fine-Tuning Meta's Llama 3.2 for Python and Data Science.",
     longDescription: "Finetunes Meta's Llama 2-7b sequentially over python code and basic use case data science code.",
@@ -62,7 +122,7 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: "9",
+    id: "8",
     title: "Military Report Generation ChatBot",
     description: "Report Generation and Analysis Chatbot for WESEE, MoD.",
     longDescription: "Allows users to communicate with databases in natural language, to get detailed reports and analysis as per their requests.",
@@ -74,7 +134,7 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: "8",
+    id: "7",
     title: "Drone Identification and Tracking",
     description: "Drone Identification and Tracking pipeline for WESEE, MoD.",
     longDescription: "Detects and tracks drones, UCAVs and other flying objects in the provided video and image files.",
@@ -83,18 +143,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Eros483/Drone_Identification_and_Tracking",
     liveUrl: "",
     date: "2025-06",
-    featured: true
-  },
-  {
-    id: "7",
-    title: "Multi-Lingual Audio-Based Sentiment Detection",
-    description: "Takes audio input in 5 supported languages, and returns sentiment and emotions encaptured.",
-    longDescription: "Applies multi-modal fusion with analysis of both the way the user is speaking, and what the user is speaking.",
-    technologies: ["openai-whisper", "transformers", "torch", "scikit-learn", "numpy", "pandas", "matplotlib", "nlpaug", "fastapi"],
-    imageUrl: "https://i.imghippo.com/files/uwuq4190Ivw.png",
-    githubUrl: "https://github.com/Eros483/Cross-lingual-nlp-auditory",
-    liveUrl: "",
-    date: "2025-05",
     featured: true
   },
   {
