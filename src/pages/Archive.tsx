@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { projects } from '../data/projects';
 
 const Archive: React.FC = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   const sortedProjects = [...projects].sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
   return (
-    <div className="min-h-screen bg-slate-900">
-      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    // Changed bg-slate-900 to bg-black and added relative positioning
+    <div className="min-h-screen bg-black relative">
+      {/* Added the spotlight effect div */}
+      <div
+        className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+        style={{
+          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+        }}
+      ></div>
+
+      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 relative z-40">
         <div className="lg:py-24">
           <a
             href="/"
@@ -25,7 +48,8 @@ const Archive: React.FC = () => {
 
           <div className="mt-12 overflow-x-auto">
             <table className="w-full border-collapse text-left">
-              <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
+              {/* Changed bg-slate-900/75 to bg-black/75 */}
+              <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-black/75 px-6 py-5 backdrop-blur">
                 <tr>
                   <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
                   <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
