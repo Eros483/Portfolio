@@ -8,7 +8,7 @@ export const projects: Project[] = [
     longDescription: "Custom documentation and scripts with forked and modified triton and TensorRT repositories to continue being able to run multimodal engines efficiently. This project focuses on optimizing inference for vision-language models.",
     technologies: ["transformers", "Triton", "TensorRT", "PyTorch"],
     imageUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Eros483/Llava_Inference_TensorRT_Triton",
     liveUrl: "",
     date: "2026-01",
     featured: true
