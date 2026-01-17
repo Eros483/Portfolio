@@ -99,10 +99,10 @@ const HeroSection: React.FC = () => {
           >
             <Mail size={20} className="group-hover:text-white transition-colors group-hover:animate-wiggle" />
           </a>
-          <a 
-          href="https://drive.google.com/file/d/16yRKZNyzlzIDOK9ZnENeDHJyQbMDofF7/view?usp=sharing" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+          <a
+          href="/resume-postdeeplure.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group p-4 bg-white/20 dark:bg-white/10 backdrop-blur-sm border-2 border-white/30 text-gray-800 dark:text-white rounded-full hover:bg-accent-500 hover:border-accent-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent-500/30 animate-float"
           aria-label="Open Arnab Mandal's Resume"
           title="View Resume"

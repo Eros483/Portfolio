@@ -2,6 +2,18 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "19",
+    title: "Llava Inference via TensorRT and Triton",
+    description: "Custom documentation and scripts with forked and modified triton and trrt repos to continue being able to run multimodal engines.",
+    longDescription: "Custom documentation and scripts with forked and modified triton and TensorRT repositories to continue being able to run multimodal engines efficiently. This project focuses on optimizing inference for vision-language models.",
+    technologies: ["transformers", "Triton", "TensorRT", "PyTorch"],
+    imageUrl: "",
+    githubUrl: "",
+    liveUrl: "",
+    date: "2026-01",
+    featured: true
+  },
+  {
     id: "18",
     title: "Agentic SQL generator",
     description: "Designed to convert natural queries into stable, efficient SQL queries for healthcare.",

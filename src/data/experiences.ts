@@ -7,7 +7,7 @@ export const experiences: WorkExperience[] = [
     company: "DeepLure AI Research",
     location: "Remote",
     startDate: "2025-12",
-    endDate: "Present",
+    endDate: "2026-01",
     description: "Optimizing vRAM usage for inference model pipelines. Currently, migrating existing systems from a PyTorch backend to TensorRT and Triton Inference Server for improved performance and reduced latency.",
     achievements: [
       "Developed RAG-Toolkit with audio and image-based interactive narratives",
@@ -19,7 +19,7 @@ export const experiences: WorkExperience[] = [
   },
   {
     id: "2",
-    position: "AI Engineer Intern",
+    position: "AI Intern",
     company: "Critical AI Pvt Ltd",
     location: "Remote",
     startDate: "2025-06",
@@ -35,7 +35,7 @@ export const experiences: WorkExperience[] = [
   },
   {
     id: "1",
-    position: "Research Intern",
+    position: "AI Intern",
     company: "WESEE, Ministry of Defence",
     location: "India",
     startDate: "2025-06",
