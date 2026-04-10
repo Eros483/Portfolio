@@ -57,7 +57,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ activeSection }) => {
         </li>
         <li className="text-xs shrink-0">
           <a
-            href="/resume-postdeeplure.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-slate-400 hover:text-slate-200 transition-colors duration-300"

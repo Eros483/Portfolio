@@ -55,7 +55,7 @@ const RightPanel: React.FC = () => {
 
           <div className="mt-12">
             <a
-              href="/resume-postdeeplure.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center font-medium leading-tight text-slate-200 group"
