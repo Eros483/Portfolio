@@ -2,6 +2,18 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: "20",
+    title: "AuthChain",
+    description: "Cryptographic Governance & Consensus Protocols for Autonomous Agent Execution.",
+    longDescription: "A system for enforcing human oversight over autonomous AI systems, built on an interruption-driven control architecture with permissioned, auditable execution enforced via blockchain-based governance.",
+    technologies: ["langchain", "langgraph", "fastapi", "gemini"],
+    imageUrl: "/images/projects/authchain.png",
+    githubUrl: "https://github.com/Eros483/Llava_Inference_TensorRT_Triton",
+    liveUrl: "https://auth-chain-five.vercel.app/",
+    date: "2026-02",
+    featured: true
+  },
+  {
     id: "19",
     title: "Llava Inference via TensorRT and Triton",
     description: "Custom documentation and scripts with forked and modified triton and trrt repos to continue being able to run multimodal engines.",

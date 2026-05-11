@@ -7,7 +7,7 @@ import { projects } from '../data/projects';
 import { Project } from '../types';
 
 const RightPanel: React.FC = () => {
-  const showcaseIds = ["18", "15", "14", "11"];
+  const showcaseIds = ["18", "15", "14", "20"];
   const featuredProjects = showcaseIds
       .map((id) => projects.find((project) => project.id === id))
       .filter((project): project is Project => project !== undefined);
